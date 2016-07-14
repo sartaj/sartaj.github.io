@@ -10,7 +10,7 @@ module.exports = {
   },
   forkUrl: 'https://github.com/sartaj/sartaj.github.io',
   github: 'https://github.com/sartaj',
-  pdf: './generated/SartajChowdhury-resume.pdf',
+  pdf: 'SartajChowdhury-resume.pdf',
   twitter: 'https://twitter.com/sartaj',
   professional,
   personal,
