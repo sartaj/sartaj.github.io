@@ -1,7 +1,7 @@
 import professional from './professional.js'
 import personal from './personal.js'
 
-module.exports = {
+export default {
   cover: {
     src: './style/media/cover.jpg',
     width: '235mm',
