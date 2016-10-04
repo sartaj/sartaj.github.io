@@ -12,3 +12,4 @@ I made this resume generator because I didn't want to use Adobe to make my resum
 * Switch divs to semantic HTML
 * Make page jumps automatic
 * Add filter capabilities with print capabilities.
+* Completely abstract data from generator.
