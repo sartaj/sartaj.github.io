@@ -1,6 +1,31 @@
 /* eslint max-len: "off" */
 
 export default [
+ {
+    company: 'Whole Foods',
+    title: 'Senior Lead Software Engineer - Consultant',
+    time: '16-17',
+    highlights: [
+      'Maintained and improved full stack React/Redux/Falcor/Node.js project',
+      'Helped DevOps manage AWS Lambda, Elastic Beanstalk, & CI Builds',
+      'Led code reviews',
+      'Managed and trained junior engineers',
+      'Managed and maintained enterprise production deployments',
+      'Improved code quality with document generation & static analysis',
+    ],
+    keywords: [
+      'React',
+      'redux',
+      'ES6',
+      'Radium',
+      'Express.js',
+      'Falcor',
+      'Bamboo',
+      'Docker',
+      'Code Reviewer',
+      'JIRA',
+    ],
+  },
   {
     company: 'Visa',
     title: 'Senior Software Engineer + Design Lead',
