@@ -1,7 +1,7 @@
 /* eslint max-len: "off" */
 
 export default [
- {
+  {
     company: 'Whole Foods',
     title: 'Senior Lead Software Engineer - Consultant',
     time: '16-17',
