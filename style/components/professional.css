@@ -3,7 +3,7 @@
 }
 
 div.professional figure {
-	margin-bottom: 10mm;
+	margin-bottom: 5mm;
 	transition: opacity .4s ease-in-out;
 }
 
@@ -18,7 +18,6 @@ div.professional figure {
   .professional { column-gap: 0px; }
   .professional figure { width: 100%; }
 }
-
 
 .professional .company {
   font-size: 18pt;

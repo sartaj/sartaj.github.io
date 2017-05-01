@@ -3,7 +3,7 @@
 export default [
   {
     company: 'Whole Foods',
-    title: 'Senior Lead Software Engineer - Consultant',
+    title: 'Consultant - Software Engineering Lead - 365 by Whole Foods',
     time: '16-17',
     highlights: [
       'Maintained and improved full stack React/Redux/Falcor/Node.js project',

@@ -1,4 +1,3 @@
-/* @flow */
 
 import coverView from './CoverView.js'
 import mainPointsView from './MainPointsView.js'
