@@ -6,14 +6,14 @@
   "scripts": {
     "test": "",
     "build": "npm run build-js",
-    "build-js": "browserify src/index.js -t [ eslintify --quiet ] -t [ babelify --presets [ es2015 ] ] | uglifyjs -c > bundle.js",
-    "watch-js": "watchify src/index.js -o bundle.js -t [eslintify --continuous ] -t [ babelify --presets [ es2015 ] ]",
+    "build-js": "browserify src/index.js -t [ babelify --presets [ env ] ] | uglifyjs -c > bundle.js",
+    "watch-js": "watchify src/index.js -o bundle.js -t [ babelify --presets [ env ] ] -v",
     "dev": "npm run watch-js"
   },
   "author": "Sartaj <sartaj@sartaj.me> (sartaj.me)",
   "license": "MIT",
   "devDependencies": {
-    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-env": "^1.6.1",
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
     "eslint": "^3.0.1",

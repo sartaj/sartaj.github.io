@@ -34,6 +34,10 @@ const page = (props) => `
             .reduce((a, b) => a + b)
           }
         </div>
+      </div>
+  </div>
+  <div class="page">
+      <div class="subpage">
         <div class="section-title">Projects</div>
         <div class="personal grid">
           ${personalItemView(props.personal)}

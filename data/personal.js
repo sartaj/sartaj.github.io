@@ -1,5 +1,10 @@
 export default [
   {
+    title: 'esops',
+    description: 'Learn once. Publish anywhere. A 1 stop DevOps tools to develop and build React Native, Electron, Arduino, and Node.js Applications',
+    url: '',
+  },
+  {
     title: 'riot-animate',
     description: 'Animate Riot.js. Inspired by ng-animate.',
     url: '',

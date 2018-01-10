@@ -2,6 +2,44 @@
 
 export default [
   {
+    company: 'Northern Trust',
+    title: 'Consultant - Developer Experience',
+    time: '17-18',
+    highlights: [
+      'Developed CLI tools for developing and deploying apps that aggregate React and Angular',
+      'Designed custom Webpack builds that could build both TypeScript and Flow/JSX projects',
+      'Engineering core CSS system used throughout multiple teams',
+      'Consultant on intricacies of implementing a design system across multiple teams',
+    ],
+    keywords: [
+      'React',
+      'Webpack',
+      'Flow',
+      'TypeScript',
+      'ES6',
+      'PostCSS',
+      'Bamboo',
+      'Code Reviewer',
+      'JIRA'
+    ],
+  },
+  {
+    company: 'Mayu',
+    title: 'Founder - App Engineering',
+    time: '16-18',
+    highlights: [
+      'Developed App that can deploy to multiple targets using React Native, including Desktop with Electron',
+      'Engineering bluetooth communication system for low latency music performances',
+      'Created esops, a tool that allows for publishing React Native projects to multiple marketplaces'
+    ],
+    keywords: [
+      'React Native',
+      'Electron',
+      'Bluetooth LE',
+      'Internet of Things'
+    ],
+  },
+  {
     company: 'Whole Foods',
     title: 'Consultant - Software Engineering Lead - 365 by Whole Foods',
     time: '16-17',
@@ -21,7 +59,6 @@ export default [
       'Express.js',
       'Falcor',
       'Bamboo',
-      'Docker',
       'Code Reviewer',
       'JIRA',
     ],
@@ -76,7 +113,7 @@ export default [
     ],
   },
   {
-    company: 'MakerSquare Code School',
+    company: 'Hack Reactor Code School',
     title: 'JavaScript Teacher',
     time: '14',
     highlights: [

@@ -2,9 +2,9 @@ const render = () => `
   <div class="grid">
     <div class="col-third main-point focusable">
       <div>Senior UI Engineer</div>
-      <div>I can work in any UI web environment/framework
-           (angular, react, native js). I excel with functional
-           reactive programming using ES6 syntax.
+      <div>I can work in any ES focused environment
+           (React, Angular, ES6 & beyond, Flow, TypeScript). I excel with functional
+          JS programming, Observables, React Native, Electron, and JS DevOps.
       </div>
     </div>
     <div class="col-third main-point focusable">
@@ -14,9 +14,9 @@ const render = () => `
       </div>
     </div>
     <div class="col-third main-point focusable">
-      <div>Manager/Teacher</div>
+      <div>Design/Engineering Management</div>
       <div>I maximize relationships between different talents
-          and personalities through a deep understanding of communication theory.
+          and personalities through a deep understanding of communication theory and cognitive science.
       </div>
     </div>
   </div>
