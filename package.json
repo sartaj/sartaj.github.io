@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "dev": "esops web static dev",
-    "ship": "esops web static ship"
+    "dev": "esops dev github-pages",
+    "ship": "esops ship github-pages"
   },
   "author": "Sartaj <sartaj@sartaj.me> (sartaj.me)",
   "license": "MIT",
