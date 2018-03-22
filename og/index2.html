@@ -1,0 +1,413 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>index2</title>
+
+<meta name="generator" content="Created Using Yahoo! PageBuilder 2.61.89">
+<style>.texttail {position:absolute; visibility:visible; font-family:monospace, san-serif; font-size:x-large; font-weight:bold; color:000099;}</style>
+<script>
+function randomSpeed(c) {
+  var result = random(10 * c.speed) / 100 + c.speed / 4;
+  return result;
+}    
+function randomYOffset(c) {
+  return c.baseYOffset + random(2 * c.randomYOffset + 1) - c.randomYOffset;
+}
+function updateFlyby(c) {
+  if (!c.flyby) {
+    setTimeout('updateFlyby(c' + c.uid + ')', c.updateInterval);
+    return;
+  }
+  for (var i = 0; i < c.imageCount; i++) {
+    var name = c.prefix + i;
+    setVisible(name, true);
+    c.xOffset[name] += c.xSpeed[name];
+    var x = getViewXOffset() + c.xOffset[name];
+    var y = getViewYOffset() + c.yAnchor * (getViewHeight() -1- c.imageHeight) / 2 + c.yOffset[name] * (c.yAnchor == 2 ? -1 : 1);
+    if (outOfBounds(c, x, y, c.imageWidth, c.imageHeight)) {
+    setVisible(name, false);
+    c.flyby = false;
+    setTimeout('c' +c.uid + '.flyby=true', c.minTime + random(c.randTime));
+    c.xSpeed[name] = randomSpeed(c);
+    if (c.xSpeed[name] < 0)
+      c.xOffset[name] = getViewXOffset() + getViewWidth() + c.xFudge - c.imageWidth;
+    else
+      c.xOffset[name] = getViewXOffset() - c.xFudge;
+      c.yOffset[name] = randomYOffset(c);
+    }
+    else
+      moveLayer(name, x, y);
+  }
+  setTimeout('updateFlyby(c' + c.uid + ')', c.updateInterval);
+}
+</script>
+<script src="index2_files/layers.js"></script>
+<meta http-equiv="Page-Enter" content="RevealTrans(Duration=2,Transition=23)">
+<meta http-equiv="Page-Exit" content="RevealTrans(Duration=2,Transition=23)">
+</head><body onload="window.onresize=new Function('if (navigator.appVersion==\'Netscape\') history.go(0);');" vlink="#999999" text="#000000" link="#336699" background="index2_files/matrix11.jpg" bgcolor="#000000">
+<!-- following code added by server. PLEASE REMOVE -->
+<!-- preceding code added by server. PLEASE REMOVE -->
+<script>
+if (layerSupport()) {
+c189 = new config();
+c189.uid = 189;
+c189.prefix         = "y_flyby189";
+c189.image          = "http://www.geocities.com/sartajc99/StarsS.jpg";
+c189.imageCount     = 1
+c189.imageWidth     = 139;
+c189.imageHeight    = 94;
+c189.yAnchor        = 0;
+c189.xSpeed         = new Array();
+c189.speed          = 8
+c189.minTime     = 0 / 3;
+c189.randTime   = 2 * 0 / 3;
+c189.xOffset        = new Array();
+c189.yOffset        = new Array();
+c189.flyby             = true;
+c189.baseYOffset    = 50;
+c189.randomYOffset  = 50;
+for (var i = 0; i < c189.imageCount; i++) {
+  var name = c189.prefix + i;
+  c189.xOffset[name] = -c189.xFudge + random(getViewWidth() + c189.xFudge);
+  c189.yOffset[name] = randomYOffset(c189);
+  c189.xSpeed[name]  = randomSpeed(c189);
+  writeImage(c189.image, c189.prefix + i, -1000, -1000);
+}
+setTimeout('updateFlyby(c189)', c189.updateInterval);  
+}
+</script>
+<script>
+if (layerSupport()) {
+c190 = new config();
+c190.uid = 190;
+c190.prefix         = "y_flyby190";
+c190.image          = "http://www.geocities.com/sartajc99/Vince.jpg";
+c190.imageCount     = 1
+c190.imageWidth     = 140;
+c190.imageHeight    = 220;
+c190.yAnchor        = 2;
+c190.xSpeed         = new Array();
+c190.speed          = 8
+c190.minTime     = 0 / 3;
+c190.randTime   = 2 * 0 / 3;
+c190.xOffset        = new Array();
+c190.yOffset        = new Array();
+c190.flyby             = true;
+c190.baseYOffset    = 50;
+c190.randomYOffset  = 50;
+for (var i = 0; i < c190.imageCount; i++) {
+  var name = c190.prefix + i;
+  c190.xOffset[name] = -c190.xFudge + random(getViewWidth() + c190.xFudge);
+  c190.yOffset[name] = randomYOffset(c190);
+  c190.xSpeed[name]  = randomSpeed(c190);
+  writeImage(c190.image, c190.prefix + i, -1000, -1000);
+}
+setTimeout('updateFlyby(c190)', c190.updateInterval);  
+}
+</script>
+<div class="broke-endless-pages" id="root" style="position: absolute; top: 0pt; left: 0pt; width: 648px; height: 1255px;">
+<div style="position: absolute; left: 52px; top: 13px; width: 568px; height: 112px;">
+<table width="568" border="0" cellpadding="0" cellspacing="0" height="112"><tbody><tr valign="top">
+	<td align="center"><b><font color="#cccccc" face="Courier" size="+4"><span style="font-size: 48px;">Sartaj's Sports And Gaming Webpage</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 36px; top: 123px; width: 600px; height: 31px;">
+<table width="600" border="0" cellpadding="0" cellspacing="0" height="31"><tbody><tr valign="top">
+	<td><b><font color="#006699"><span style="font-size: 14px;">&lt; -------------------------------------------------------------------------------------------------------------------&gt;</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 352px; top: 204px; width: 2px; height: 764px;">
+<table width="2" border="0" cellpadding="0" cellspacing="0" height="764"><tbody><tr valign="top">
+	<td><img src="index2_files/aboutme_techie2_vertline.gif" width="2" border="0" height="764"></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 76px; top: 205px; width: 263px; height: 571px;">
+<table width="263" border="0" cellpadding="0" cellspacing="0" height="571"><tbody><tr valign="top">
+	<td align="center" bgcolor="#990000"><b><font color="#000066" face="Courier" size="-1"><span style="font-size: 12px;">Welcome
+to my webpage! My name is Sartaj. This webpage will give you special
+access to my favorite sports teams and game websites. Enjoy the Games,
+Teams, and Players!<br>My Favorite Teams:<br>Dallas Stars<br>Dallas Mavericks<br>Dallas Cowboys<br>Tennesse Titans<br>Toronto Raptors<br>My Favorite Players:<br>Micheal Jordan<br>Allen Iverson<br>Eddie George<br>Roy Williams<br>And my 2 most favorte...<br>Vince Carter and Mike Modano!<br>My favorite games are:<br>Kingdom Hearts<br>Final Fantisy Series<br>Madden Series<br>NBA 2K Series<br>NHL Serires<br> My most favorite game of all-time is: <br>The Legend of Zelda: Ocarina of Time<br>Some of My Favorite Movies:<br>The Lord of the Rings Series<br>Dumb and Dumber<br>The Matrix Series<br>The Fast &amp; the Furious Series<br>My Favorite Aritists:<br>Eminem<br>Linkin Park<br>Limp Bizkit<br>Ja Rule<br>50 Cent<br>Rakim<br>These are my favorite things.<br></span></font></b><b><font color="#00ff00" face="Courier"><span style="font-size: 14px;">SIGN MY GUESTBOOK!!!<br></span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 368px; top: 363px; width: 255px; height: 18px;">
+<table width="255" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><b><i><font color="#ff0000" size="-1"><span style="font-size: 12px;">Nissan Skyline</span></font></i></b><i></i></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 413px; width: 256px; height: 22px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="22"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><b><u><font color="#ff0000" face="Courier" size="+1"><span style="font-size: 18px;">Sports Links</span></font></u></b><u></u></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 443px; width: 256px; height: 15px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="15"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.nba.com/mavericks"><font color="#ff0000" size="-1"><span style="font-size: 12px;">Dallas Mavericks</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 462px; width: 256px; height: 15px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="15"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.dallasstars.com/"><font color="#ff0000" size="-1"><span style="font-size: 12px;">Dallas Stars</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 535px; width: 256px; height: 15px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="15"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.vincecarter15.com/"><font color="#ff0000" size="-1"><span style="font-size: 12px;">Vince Carter Website</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 515px; width: 256px; height: 16px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="16"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.mikemodano.com/"><font color="#ff0000" size="-1"><span style="font-size: 12px;">Mike Modano Website</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 945px; width: 257px; height: 22px;">
+<table width="257" border="0" cellpadding="0" cellspacing="0" height="22"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><b><u><font color="#9999ff" face="Courier" size="+1"><span style="font-size: 18px;">My E-mail</span></font></u></b><u></u></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 435px; top: 976px; width: 187px; height: 21px;">
+<table width="187" border="0" cellpadding="0" cellspacing="0" height="21"><tbody><tr valign="top">
+	<td bgcolor="#000000"><b><font color="#006699" face="Courier" size="-1"><span style="font-size: 12px;">Sartaj</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 976px; width: 59px; height: 21px;">
+<table width="59" border="0" cellpadding="0" cellspacing="0" height="21"><tbody><tr valign="top">
+	<td align="right" bgcolor="#000000"><b><font color="#006699" face="Courier" size="-1"><span style="font-size: 12px;">Name:</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 435px; top: 999px; width: 187px; height: 21px;">
+<table width="187" border="0" cellpadding="0" cellspacing="0" height="21"><tbody><tr valign="top">
+	<td bgcolor="#000000"><a href="mailto:sartajc99@yahoo.com"><b><font color="#006699" face="Courier" size="-1"><span style="font-size: 12px;">sartajc99@yahoo.com</span></font></b></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 999px; width: 59px; height: 21px;">
+<table width="59" border="0" cellpadding="0" cellspacing="0" height="21"><tbody><tr valign="top">
+	<td align="right" bgcolor="#000000"><b><font color="#006699" face="Courier" size="-1"><span style="font-size: 12px;">Email:</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 264px; top: 1124px; width: 60px; height: 30px;">
+<table width="60" border="0" cellpadding="0" cellspacing="0" height="30"><tbody><tr valign="top">
+	<td><!-- WebCounter -->
+<!-- begin geo counter -->
+<img src="index2_files/counter.gif">
+<!-- end geo counter --></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 753px; width: 255px; height: 18px;">
+<table width="255" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://nxn.netgate.net/games.html"><font color="#ff0000"><span style="font-size: 14px;">Games Website 5: Net Gate</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 635px; width: 256px; height: 21px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="21"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><b><u><font color="#ff0000" face="Courier" size="+1"><span style="font-size: 18px;">Games(By Ranking)</span></font></u></b><u></u></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 222px; top: 130px; width: 213px; height: 18px;">
+<table width="213" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td><!-- Guestbook -->
+<a href="http://us.geocities.yahoo.com/gb/sign?member=sartajc99"><img src="index2_files/sign2.gif" border="0"></a><img src="index2_files/c.gif" width="5" border="0" height="5"><a href="http://us.geocities.yahoo.com/gb/view?member=sartajc99"><img src="index2_files/view2.gif" border="0"></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 497px; width: 256px; height: 15px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="15"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.titansonline.com/"><u><font color="#ff0000" size="-1"><span style="font-size: 12px;">Tennesse Titans</span></font></u></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 35px; top: 1212px; width: 600px; height: 31px;">
+<table width="600" border="0" cellpadding="0" cellspacing="0" height="31"><tbody><tr valign="top">
+	<td><b><font color="#006699"><span style="font-size: 14px;">&lt; -------------------------------------------------------------------------------------------------------------------&gt;</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 560px; width: 256px; height: 22px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="22"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><b><u><font color="#ff0000" face="Courier" size="+1"><span style="font-size: 18px;">Music</span></font></u></b><u></u></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 590px; width: 256px; height: 16px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="16"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.launch.com/"><font color="#ff0000" size="-1"><span style="font-size: 12px;">Launch</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 731px; width: 256px; height: 18px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.phatgames.net/"><font color="#ff0000"><span style="font-size: 14px;">Games Website 4: Phat Games</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 775px; width: 256px; height: 18px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.gamepro.com/"><font color="#ff0000"><span style="font-size: 14px;">Games Website 6: Game Pro</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 370px; top: 204px; width: 250px; height: 146px;">
+<table width="250" border="0" cellpadding="0" cellspacing="0" height="146"><tbody><tr valign="top">
+	<td><img src="index2_files/skyline5.jpg" width="250" border="0" height="146"></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 610px; width: 256px; height: 16px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="16"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.digitallyimported.com/"><font color="#ff0000" size="-1"><span style="font-size: 12px;">Digitally Imported</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 802px; width: 256px; height: 24px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="24"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><b><u><font color="#ff0000" face="Courier" size="+1"><span style="font-size: 18px;">Cool Websites</span></font></u></b><u></u></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 833px; width: 257px; height: 18px;">
+<table width="257" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.spoono.com/"><font color="#ff0000"><span style="font-size: 14px;">Spoono (Website Making Helper)</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 855px; width: 257px; height: 18px;">
+<table width="257" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.homestarrunner.com/"><font color="#ff0000"><span style="font-size: 14px;">Home Star Runner (Funny Site)</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 877px; width: 257px; height: 18px;">
+<table width="257" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.shadowness.com/"><font color="#ff0000"><span style="font-size: 14px;">Shadowness (Wallpaper)</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 247px; top: 1176px; width: 213px; height: 18px;">
+<table width="213" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td><!-- Guestbook -->
+<a href="http://us.geocities.yahoo.com/gb/sign?member=sartajc99"><img src="index2_files/sign2.gif" border="0"></a><img src="index2_files/c.gif" width="5" border="0" height="5"><a href="http://us.geocities.yahoo.com/gb/view?member=sartajc99"><img src="index2_files/view2.gif" border="0"></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 479px; width: 256px; height: 15px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="15"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.dallascowboys.com/"><u><font color="#ff0000" size="-1"><span style="font-size: 12px;">Dallas Cowboys</span></font></u></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 665px; width: 256px; height: 18px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.addictinggames.com/"><font color="#ff0000"><span style="font-size: 14px;">Games Website 1: Addicting Games</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 687px; width: 256px; height: 18px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.miniclip.com/"><font color="#ff0000"><span style="font-size: 14px;">Games Website 2: Mini Clip</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 709px; width: 256px; height: 18px;">
+<table width="256" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.candystand.com/"><font color="#ff0000"><span style="font-size: 14px;">Games Website 3: Candystand</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 90px; top: 888px; width: 240px; height: 31px;">
+<table width="240" border="0" cellpadding="0" cellspacing="0" height="31"><tbody><tr valign="top">
+	<td valign="middle" align="center" bgcolor="#000000"><b><font color="#cccccc" face="Courier"><span style="font-size: 14px;">Cowboys are back!</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 90px; top: 923px; width: 240px; height: 31px;">
+<table width="240" border="0" cellpadding="0" cellspacing="0" height="31"><tbody><tr valign="top">
+	<td valign="middle" align="center" bgcolor="#000000"><b><font color="#00cc00" face="Courier"><span style="font-size: 14px;">Root for the Stars!</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 90px; top: 958px; width: 240px; height: 31px;">
+<table width="240" border="0" cellpadding="0" cellspacing="0" height="31"><tbody><tr valign="top">
+	<td valign="middle" align="center" bgcolor="#000000"><b><font color="#0000ff" face="Courier"><span style="font-size: 14px;">Mavs are getting there!</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 90px; top: 993px; width: 240px; height: 31px;">
+<table width="240" border="0" cellpadding="0" cellspacing="0" height="31"><tbody><tr valign="top">
+	<td valign="middle" align="center" bgcolor="#000000"><b><font color="#ff0000" face="Courier"><span style="font-size: 14px;">Forget the Rangers</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 366px; top: 899px; width: 257px; height: 18px;">
+<table width="257" border="0" cellpadding="0" cellspacing="0" height="18"><tbody><tr valign="top">
+	<td align="center" bgcolor="#000000"><a href="http://www.wcremix.com/"><font color="#ff0000"><span style="font-size: 14px;">West Coast Remix (Wallpaper)</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position: absolute; left: 90px; top: 1040px; width: 240px; height: 23px;">
+<table width="240" border="0" cellpadding="0" cellspacing="0" height="23"><tbody><tr valign="top">
+	<td valign="middle" align="center" bgcolor="#000000"><a href="./gallery_p1.html"><font color="#ffffff" size="+1"><span style="font-size: 18px;">Gallery</span></font></a></td>
+</tr></tbody></table></div>
+</div>
+
+<table width="628" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr valign="top" align="left">
+	<td><img src="index2_files/c.gif" width="226" height="1"></td>
+	<td><img src="index2_files/c.gif" width="239" height="1"></td>
+	<td><img src="index2_files/c.gif" width="163" height="1"></td>
+	<td><img src="index2_files/c.gif" width="1" height="1"></td>
+</tr>
+<tr valign="top">
+	<td colspan="4" height="1076"></td>
+</tr>
+<tr valign="top">
+	<td colspan="1" height="24"></td>
+	<td colspan="1" rowspan="1" width="239"><!-- Date & Time -->
+<form name="y_datetime">
+<input value="Sun Oct 25 2009 , 2:37:21 am" size="32" name="textbox1" style="" type="text" width="32">
+</form>
+
+<script language="javascript">
+
+ydate = new Object();
+ydate.style  = 3;
+ydate.military = 0;
+
+ydate.days1  = new Array("Sun","Mon","Tues","Wed","Thur","Fri","Sat");
+ydate.days2  = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+ydate.months1 = new Array("Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec");
+ydate.months2 = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function datedisplay() {
+
+  ydate.now   = new Date();
+  ydate.year  = ydate.now.getFullYear();
+  ydate.month = ydate.now.getMonth();
+  ydate.date  = ydate.now.getDate();
+  ydate.day   = ydate.now.getDay();
+  ydate.hour  = ydate.now.getHours();
+  ydate.min   = ydate.now.getMinutes();
+  ydate.sec   = ydate.now.getSeconds();
+  ydate.ampm  = "";
+
+  if (ydate.military) {
+        if (ydate.hour < 10) { ydate.hour = "0" + ydate.hour; }
+  }
+  else if (ydate.hour > 11) {
+        ydate.ampm = "pm";
+        ydate.hour = ydate.hour - 12;
+  }
+  else { ydate.ampm = "am"; }
+
+  if (ydate.hour == 0) { ydate.hour = 12; }
+  if (ydate.min < 10)  { ydate.min = "0" + ydate.min; }
+  if (ydate.sec < 10)  { ydate.sec = "0" + ydate.sec; }
+
+  if (ydate.style == 0)      { ydate.txt = ydate.months2[ydate.month]+" "+ydate.date+" "+ydate.year; }
+  else if (ydate.style == 1) { ydate.txt = ydate.days2[ydate.day]+" "+ydate.hour+":"+ydate.min+":"+ydate.sec+" "+ydate.ampm; }
+  else if (ydate.style == 2) { ydate.txt = ydate.months2[ydate.month]+" "+ydate.date+" "+ydate.year+" , "+ydate.hour+":"+ydate.min+":"+ydate.sec+" "+ydate.ampm; }
+  else if (ydate.style == 3) { ydate.txt = ydate.days1[ydate.day]+" "+ydate.months1[ydate.month]+" "+ydate.date+" "+ydate.year+" , "+ydate.hour+":"+ydate.min+":"+ydate.sec+" "+ydate.ampm; }
+  else if (ydate.style == 4) { ydate.txt = (ydate.month+1)+"/"+ydate.date+"/"+ydate.year+" , "+ydate.hour+":"+ydate.min+":"+ydate.sec+" "+ydate.ampm; }
+  else                      { ydate.txt = ydate.year+"/"+(ydate.month+1)+"/"+ydate.date+" , "+ydate.hour+":"+ydate.min+":"+ydate.sec+" "+ydate.ampm; }
+
+  document.y_datetime.textbox1.value = ydate.txt;
+  ydate.id=setTimeout("datedisplay()",1000);
+}
+
+datedisplay();
+</script>
+</td>
+	<td colspan="2" height="24"></td>
+</tr>
+<tr valign="top">
+	<td colspan="4" height="135"></td>
+</tr>
+</tbody></table>
+<script language="javascript">
+c187             = new config();
+c187.prefix      = "y_texttail187";
+c187.updateDelay = 30;
+c187.letterspacing = 14;
+c187.fontsize    = "x-large";
+c187.fontweight  = "bold";
+c187.fontcolor   = "000099";
+c187.message     = "Stars Rule!!!";
+c187.message     = c187.message.split("");
+c187.howmany     = parseInt(c187.message.length);
+c187.oldx = new Array();
+c187.oldy = new Array();
+c187.uid   = 187;
+for (i=0;i<c187.howmany;i++) {
+ c187.oldx[i] = 0;
+ c187.oldy[i] = -50;
+}
+if (document.all) {
+ for (i=0;i<c187.howmany;i++) {
+  document.writeln("<span id=\"" + c187.prefix + i + "\" class=\"texttail\" style=\"left:0; top:-50;\">" + c187.message[i] + "</span>\n\n");
+  layers[c187.prefix + i] = document.all[c187.prefix + i];
+ }
+} else if (document.layers) {
+ for (i=0;i<c187.howmany;i++) {
+  document.writeln("<layer id=\"" + c187.prefix + i + "\" left=0 top=\"-50\"><span class=\"texttail\">" + c187.message[i] + "</span></layer>\n\n");
+  layers[c187.prefix + i] = document.layers[c187.prefix + i];
+ }
+}
+function updateTextTail(c) {
+ for (i=c.howmany-1;i>0;i--) {
+  c.oldx[i] = c.oldx[i-1] + c.letterspacing;
+  c.oldy[i] = c.oldy[i-1];
+ }
+ c.oldx[0] = cursorX + c.letterspacing;
+ c.oldy[0] = cursorY;
+ for (i=0;i<c.howmany;i++) {
+  if (c.oldx[i] >= getViewWidth() - 30) {
+   c.oldx[i] = getViewWidth() - 30;
+   setVisible(c.prefix + i, 0);
+  } else { setVisible(c.prefix + i, 1); }
+ moveLayer(c.prefix + i, c.oldx[i], c.oldy[i]);
+ }
+ setTimeout("updateTextTail(c" + c.uid + ")", c.updateDelay);
+}
+if (c187.message != "") {
+ captureXY();
+ updateTextTail(c187);
+}
+</script>
+<!-- text below generated by server. PLEASE REMOVE --><script language="JavaScript" src="index2_files/mc.js"></script><script language="JavaScript" src="index2_files/geov2_001.js"></script><script language="javascript">geovisit();</script><img style="display: none;" src="index2_files/visit.gif" border="0">
+<noscript><img src="http://visit.geocities.yahoo.com/visit.gif?us1256456198" alt="setstats" border="0" width="1" height="1"></noscript>
+<img src="index2_files/serv.gif" alt="1" width="1" height="1">
+</body></html>

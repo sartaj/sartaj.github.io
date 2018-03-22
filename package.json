@@ -11,8 +11,8 @@
   "author": "Sartaj <sartaj@sartaj.me> (sartaj.me)",
   "license": "MIT",
   "devDependencies": {
-    "esops": "next",
-    "@esops/esops-config-contributor": "next"
+    "esops": "latest",
+    "@esops/eslint-config-contributor": "latest"
   },
   "dependencies": {
     "kefir": "^3.2.6"
