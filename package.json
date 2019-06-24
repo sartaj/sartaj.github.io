@@ -5,14 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "dev": "esops dev github-pages",
-    "ship": "esops ship github-pages"
+    "dev": "parcel src/index.html",
   },
   "author": "Sartaj <sartaj@sartaj.me> (sartaj.me)",
   "license": "MIT",
   "devDependencies": {
-    "esops": "next",
-    "@esops/esops-config-contributor": "next"
+    "parcel": "1.12.3"
   },
   "dependencies": {
     "kefir": "^3.2.6"

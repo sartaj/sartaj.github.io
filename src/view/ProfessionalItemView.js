@@ -11,12 +11,7 @@ const renderProfessional = (job) => (`
           : ''
         }
       </ul>
-      <div class="keywords"><strong>Used:</strong> ${job.keywords
-        ? job.keywords
-          .map(keyword => `<span class="keyword">${keyword}</span> `)
-          .reduce((a, b) => a + b)
-        : ''
-      }</div>
+
 
     </div>
   </figure>

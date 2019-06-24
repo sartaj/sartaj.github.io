@@ -1,9 +1,9 @@
 const render = () => `
   <div class="grid">
     <div class="col-third main-point focusable">
-      <div>Senior UI Engineer</div>
-      <div>I can work in any ES focused environment
-           (React, Angular, ES6 & beyond, Flow, TypeScript). I excel with functional
+      <div>JS Engineering</div>
+      <div>I can work in any ES compiled environment
+           (TypeScript, ReasonML, React, Flow). I excel with functional
           JS programming, Observables, React Native, Electron, and JS DevOps.
       </div>
     </div>

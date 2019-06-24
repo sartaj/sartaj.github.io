@@ -2,17 +2,38 @@
 
 export default [
   {
-    company: 'Northern Trust',
-    title: 'Consultant - Developer Experience',
-    time: '17-18',
+    company: 'Hilton',
+    title: 'Platform Architect - React Native',
+    time: '19-Present',
     highlights: [
-      'Developed CLI tools for developing and deploying apps that aggregate React and Angular',
-      'Designed custom Webpack builds that could build both TypeScript and Flow/JSX projects',
-      'Engineering core CSS system used throughout multiple teams',
-      'Consultant on intricacies of implementing a design system across multiple teams',
+      'Transitioned existing project to use TypeScript and React Hooks',
+      'Re-architected GraphQL interface to reduce client load',
+      'Refactored existing code base by reducing lines of code by over 30%',
+      'Audited data transformation algorithms for network, time, and space complexity'
     ],
     keywords: [
+      'TypeScript',
+      'React Native',
       'React',
+      'Windows App Center'
+    ]
+  },
+  {
+    company: 'Northern Trust',
+    title: 'Senior Software Engineer - UI Services',
+    time: '17-18',
+    highlights: [
+      'Architected and designed core portal framework used by multiple teams for a single SPA experience',
+      'Developed CLI tools for developing and deploying apps that aggregate React and Angular',
+      'Designed custom Webpack builds that could build both TypeScript and Flow/JSX projects',
+      'Assisted in integration of React Native project into Native iOS project',
+      'Engineering core CSS system used throughout multiple teams',
+      'Consultant on intricacies of implementing a design system across multiple teams'
+    ],
+    keywords: [
+      'Single SPA Portal Framework',
+      'React',
+      'React Native',
       'Webpack',
       'Flow',
       'TypeScript',
@@ -21,7 +42,7 @@ export default [
       'Bamboo',
       'Code Reviewer',
       'JIRA'
-    ],
+    ]
   },
   {
     company: 'Mayu',
@@ -30,7 +51,8 @@ export default [
     highlights: [
       'Developed App that can deploy to multiple targets using React Native, including Desktop with Electron',
       'Engineering bluetooth communication system for low latency music performances',
-      'Created esops, a tool that allows for publishing React Native projects to multiple marketplaces'
+      'Created esops, a tool that allows for publishing React Native projects to multiple marketplaces',
+      'Built React Native Android app that uses native light sensor'
     ],
     keywords: [
       'React Native',

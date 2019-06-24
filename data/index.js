@@ -1,6 +1,6 @@
 import professional from './professional.js'
 import personal from './personal.js'
-import coverImg from '../style/media/cover.jpg'
+import coverImg from '../src/style/media/cover.jpg'
 
 export default {
   cover: {

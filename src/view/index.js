@@ -17,7 +17,7 @@ const page = (props) => `
         <div class="professional" id="columns">
           ${
             props.professional
-            .slice(0, 3)
+            .slice(0, 4)
             .map(job => professionalItemView(job))
             .reduce((a, b) => a + b)
           }
@@ -29,7 +29,7 @@ const page = (props) => `
         <div class="professional" id="columns">
           ${
             props.professional
-            .slice(3, props.professional.length + 1)
+            .slice(4, props.professional.length + 1)
             .map(job => professionalItemView(job))
             .reduce((a, b) => a + b)
           }
