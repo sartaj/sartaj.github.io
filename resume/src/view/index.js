@@ -1,4 +1,3 @@
-
 import coverView from './CoverView.js'
 import mainPointsView from './MainPointsView.js'
 import professionalItemView from './ProfessionalItemView.js'
@@ -6,33 +5,28 @@ import personalItemView from './PersonalItemView.js'
 import forkOnGithub from './ForkOnGithub.js'
 import topSection from './TopSection.js'
 
-const page = (props) => `
+const page = props => `
   ${forkOnGithub(props)}
   ${topSection(props)}
   <div class="page">
       ${coverView(props)}
       <div class="subpage">
-        ${mainPointsView(props)}
         <div class="section-title">Professional</div>
         <div class="professional" id="columns">
-          ${
-            props.professional
+          ${props.professional
             .slice(0, 4)
             .map(job => professionalItemView(job))
-            .reduce((a, b) => a + b)
-          }
+            .reduce((a, b) => a + b)}
         </div>
       </div>
   </div>
   <div class="page">
       <div class="subpage">
         <div class="professional" id="columns">
-          ${
-            props.professional
+          ${props.professional
             .slice(4, props.professional.length + 1)
             .map(job => professionalItemView(job))
-            .reduce((a, b) => a + b)
-          }
+            .reduce((a, b) => a + b)}
         </div>
       </div>
   </div>

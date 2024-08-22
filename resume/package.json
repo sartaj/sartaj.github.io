@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html"
   },
   "author": "Sartaj <sartaj@sartaj.me> (sartaj.me)",
   "license": "MIT",
