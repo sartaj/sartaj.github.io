@@ -1,166 +1,151 @@
-
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Sartaj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poltawski+Nowy:ital,wght@0,700;1,700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Structure */
 
-<head>
-  <meta charset="utf-8">
-  <title>Sartaj</title>
-  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
-  <style>
+      body,
+      ul,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        padding: 0;
+        margin: 0;
+      }
 
-    /* Structure */
+      nav {
+        margin-top: 10px;
+      }
 
-    body, ul, h1, h2, h3, h4, h5, h6, p {
-      padding: 0;
-      margin: 0;
-    }
+      header {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
+      }
 
-    nav, h1, img,h2 {
-      margin-top: 10px;
-    }
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-    body {
-      margin-top: 40vh;
-      margin-left: 1rem;
-    }
+      nav ul li {
+        list-style-type: none;
+        display: flex;
+      }
 
-    header {
-      position: relative;
-    }
+      /* Desktop view */
+      @media (orientation: landscape) {
+        nav ul {
+          flex-direction: row;
+        }
 
-    nav ul {
-      display: flex;
-      flex-direction: row;
-    }
+        /* Add space after each link */
+        nav li:after {
+          content: "  ";
+          white-space: pre;
+          opacity: 0.4;
+        }
 
-    nav ul li {
-      list-style-type: none;
-      display: flex;
-    }
+        nav li:last-child:after {
+          content: "";
+        }
+      }
 
-    #background-video {
-      height: 60vh;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-    }
+      /* Typography */
 
-    .video-container video {
-      /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-      width: auto;
-      height: auto;
-      
-      /* Center the video */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
+      body {
+        font-family: sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: left;
+      }
 
-    /* Layers */
+      h1 {
+        font-family: "Poltawski Nowy", serif;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
 
-    #background-video{ z-index: 1 }
-    header { z-index: 2; }
+      h2 {
+        font-family: "Poppins", san-serif;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
 
-    /* Typography */
+      nav li a,
+      li a:visited,
+      nav li:after {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: lowercase;
+      }
 
-    body {
-      font-family: sans-serif;
-      font-size: 26px;
-      font-weight: bold;
-      text-align: left;
-    }
+      nav li a:hover {
+        text-decoration: underline;
+      }
 
-    h1, li {
-      font-family: 'Playfair Display', serif;
-    }
+      /* Skin */
 
-    nav li a, 
-    li a:visited,
-    nav li:after {
-      font-weight: 400;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
+      body {
+        background: #ffae70;
+      }
 
- 
-    nav li a:hover {
-      text-decoration: underline;
-    }
+      body,
+      nav li a,
+      li a:visited {
+        color: black;
+      }
+    </style>
+  </head>
 
-    nav li:after {
-      content: "  ";
-      white-space: pre;
-      opacity: 0.4;
-    }
-
-    nav li:last-child:after {
-      content: "";
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-    }
-
-    h2 {
-      font-weight: 700;
-      font-size: 20px;
-      text-transform: uppercase;
-    }
-
-    /* Skin */
-
-    body {
-      background: white;
-    }
-
-    body,
-    nav li a, 
-    li a:visited {
-      color: black;
-    }
-
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Sartaj</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="//youtube.com/channel/UCsakSLjlhyhXRvBK7Shyo4g">YouTube</a>
-        </li>
-        <li>
-          <a href="//instagram.com/sartaj.etc/">Instagram</a>
-        </li>
-        <li>
-          <a href="//tiktok.com/@sartaj.etc">TikTok</a>
-        </li>
-        <li>
-          <a href="//medium.com/@sartaj/">Medium</a>
-        </li>
-        <li>
-          <a href="//twitter.com/sartaj">Twitter</a>
-        </li>
-        <li>
-          <a href="//github.com/sartaj">GitHub</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31031995-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-31031995-1');
-  </script>
-</body>
-
+  <body>
+    <header>
+      <h1>Sartaj</h1>
+      <h2>Chicago</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="//youtube.com/channel/UCsakSLjlhyhXRvBK7Shyo4g">YouTube</a>
+          </li>
+          <li>
+            <a href="//instagram.com/sartaj.etc/">Instagram</a>
+          </li>
+          <li>
+            <a href="//tiktok.com/@sartaj.etc">TikTok</a>
+          </li>
+          <li>
+            <a href="//medium.com/@sartaj/">Medium</a>
+          </li>
+          <li>
+            <a href="//twitter.com/sartaj">Twitter</a>
+          </li>
+          <li>
+            <a href="//github.com/sartaj">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
